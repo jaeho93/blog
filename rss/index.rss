@@ -1,88 +1,110 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>ZZERJAE's LAB</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.11</generator><lastBuildDate>Wed, 04 Jul 2018 15:31:18 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Test</title><description>&lt;h1 id="test"&gt;Test&lt;/h1&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>ZZERJAE's LAB</title><description>개발에 대한 본인의 이야기를 적어 놓는 공간입니다.</description><link>http://localhost:2368/</link><generator>Ghost 0.11</generator><lastBuildDate>Wed, 04 Jul 2018 18:39:44 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>github.io에 ghost 기반 블로그 배포하기-1-</title><description>&lt;h2 id=""&gt;들어가며&lt;/h2&gt;
 
-&lt;p&gt;this is test thing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pages.github.com/"&gt;GitHub.io(GitHub Pages)&lt;/a&gt;는 github에서 제공해주는 무료 웹 호스팅입니다. GitHub 저장소의 내용을 웹 페이지로 서비스해주는 방식으로 동작합니다. 이를 이용하면, 어렵지 않게 자신의 블로그를 만들 수 있습니다. 블로그를 호스팅 하는데 사용하는 플랫폼으로 여러가지가 있습니다. 예를 들어, GitHub Pages에서 내부 엔진으로 사용하는 Jekyll이 있고 제가 다루고자 하는 Ghost가 있습니다. 제가&lt;/p&gt;</description><link>http://localhost:2368/githubio_blog_ghost/</link><guid isPermaLink="false">7e7d609d-0142-488f-8f71-171113e064dc</guid><category>blog</category><dc:creator>Jaeho Cho</dc:creator><pubDate>Wed, 04 Jul 2018 16:12:24 GMT</pubDate><media:content url="http://localhost:2368/content/images/2018/07/ghost.png" medium="image"/><content:encoded>&lt;h2 id=""&gt;들어가며&lt;/h2&gt;
 
-&lt;h1 id=""&gt;이것은 테스트입니다.&lt;/h1&gt;
-
-&lt;h2 id="thisisthetest"&gt;this is the test&lt;/h2&gt;
-
-&lt;p&gt;테스트
-테스트 테스트
-가나다라마바사아자차카타파하
-ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;/p&gt;</description><link>http://localhost:2368/untitled/</link><guid isPermaLink="false">2116c44b-5d88-4e87-99ee-edfb0ce930e3</guid><dc:creator>Jaeho Cho</dc:creator><pubDate>Wed, 04 Jul 2018 14:42:05 GMT</pubDate><content:encoded>&lt;h1 id="test"&gt;Test&lt;/h1&gt;
-
-&lt;p&gt;this is test thing.&lt;/p&gt;
-
-&lt;h1 id=""&gt;이것은 테스트입니다.&lt;/h1&gt;
-
-&lt;h2 id="thisisthetest"&gt;this is the test&lt;/h2&gt;
-
-&lt;p&gt;테스트
-테스트 테스트
-가나다라마바사아자차카타파하
-ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;/p&gt;</content:encoded></item><item><title>Welcome to Ghost</title><description>&lt;p&gt;You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &lt;code&gt;&amp;lt;your blog URL&amp;gt;/ghost/&lt;/code&gt;. When you arrive, you can select this post from a list&lt;/p&gt;</description><link>http://localhost:2368/welcome-to-ghost/</link><guid isPermaLink="false">4bd0d5ca-060c-44ce-98e8-7adbae61df64</guid><category>Getting Started</category><dc:creator>Jaeho Cho</dc:creator><pubDate>Wed, 04 Jul 2018 14:38:01 GMT</pubDate><content:encoded>&lt;p&gt;You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &lt;code&gt;&amp;lt;your blog URL&amp;gt;/ghost/&lt;/code&gt;. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!&lt;/p&gt;
-
-&lt;h2 id="gettingstarted"&gt;Getting Started&lt;/h2&gt;
-
-&lt;p&gt;Ghost uses something called Markdown for writing. Essentially, it's a shorthand way to manage your post formatting as you write!&lt;/p&gt;
-
-&lt;p&gt;Writing in Markdown is really easy. In the left hand panel of Ghost, you simply write as you normally would. Where appropriate, you can use &lt;em&gt;shortcuts&lt;/em&gt; to &lt;strong&gt;style&lt;/strong&gt; your content. For example, a list:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Item number one&lt;/li&gt;
-&lt;li&gt;Item number two
-&lt;ul&gt;&lt;li&gt;A nested item&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;A final item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;or with numbers!&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Remember to buy some milk  &lt;/li&gt;
-&lt;li&gt;Drink the milk  &lt;/li&gt;
-&lt;li&gt;Tweet that I remembered to buy the milk, and drank it&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id="links"&gt;Links&lt;/h3&gt;
-
-&lt;p&gt;Want to link to a source? No problem. If you paste in a URL, like &lt;a href="http://ghost.org"&gt;http://ghost.org&lt;/a&gt; - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to &lt;a href="http://ghost.org"&gt;the Ghost website&lt;/a&gt;. Neat.&lt;/p&gt;
-
-&lt;h3 id="whataboutimages"&gt;What about Images?&lt;/h3&gt;
-
-&lt;p&gt;Images work too! Already know the URL of the image you want to include in your article? Simply paste it in like this to make it show up:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ghost.org/images/ghost.png" alt="The Ghost Logo"&gt;&lt;/p&gt;
-
-&lt;p&gt;Not sure which image you want to use yet? That's ok too. Leave yourself a descriptive placeholder and keep writing. Come back later and drag and drop the image in to upload:&lt;/p&gt;
-
-&lt;h3 id="quoting"&gt;Quoting&lt;/h3&gt;
-
-&lt;p&gt;Sometimes a link isn't enough, you want to quote someone on what they've said. Perhaps you've started using a new blogging platform and feel the sudden urge to share their slogan? A quote might be just the way to do it!&lt;/p&gt;
+&lt;img src="http://localhost:2368/content/images/2018/07/ghost.png" alt="github.io에 ghost 기반 블로그 배포하기-1-"&gt;&lt;p&gt;&lt;a href="https://pages.github.com/"&gt;GitHub.io(GitHub Pages)&lt;/a&gt;는 github에서 제공해주는 무료 웹 호스팅입니다. GitHub 저장소의 내용을 웹 페이지로 서비스해주는 방식으로 동작합니다. 이를 이용하면, 어렵지 않게 자신의 블로그를 만들 수 있습니다. 블로그를 호스팅 하는데 사용하는 플랫폼으로 여러가지가 있습니다. 예를 들어, GitHub Pages에서 내부 엔진으로 사용하는 Jekyll이 있고 제가 다루고자 하는 Ghost가 있습니다. 제가 보았을 때, Ghost의 장점이라고 한다면,&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Ghost - Just a blogging platform&lt;/p&gt;
+  &lt;ol&gt;
+  &lt;li&gt;툴의 UI가 직관적이다.&lt;/li&gt;
+  &lt;li&gt;MarkDown Editor가 편리하다.&lt;/li&gt;
+  &lt;li&gt;커스텀이 용이하다.&lt;/li&gt;
+  &lt;/ol&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id="workingwithcode"&gt;Working with Code&lt;/h3&gt;
+&lt;p&gt;정도를 이야기 할 수 있습니다. Jekyll과 Ghost의 차이점들을 자세히 알고싶다면 아래의 참고 문서를 참고하시기 바랍니다. 이 주제를 다루는 순서는 다음과 같습니다.&lt;/p&gt;
 
-&lt;p&gt;Got a streak of geek? We've got you covered there, too. You can write inline &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; blocks really easily with back ticks. Want to show off something more comprehensive? 4 spaces of indentation gets you there.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;블로그를 제작하기 위한 환경 셋팅하기  &lt;/li&gt;
+&lt;li&gt;buster를 이용하여 GitHub 저장소에 배포하기  &lt;/li&gt;
+&lt;li&gt;Ghost 간단하게 사용해보기&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;.awesome-thing {
-    display: block;
-    width: 100%;
-}
+&lt;p&gt;저는 Windwos 10 운영체제를 사용중이고, OS로 ubunru 16.04 LTS를 사용하시는 분은 WSL 부분은 건너 뛰시면 됩니다. 앞으로 진행될 내용은 직접적인 프로그래밍을 다루고 있지는 않지만 익숙하지 않을 경우 어려울 수 있습니다. 또한 저의 정보 정리글로 작성하는 것이기 때문에 Ghost의 설치와 직접적으로 연관되지 않은 부분이 다소 포함되어 있습니다.&lt;/p&gt;
+
+&lt;h2 id=""&gt;설치하기&lt;/h2&gt;
+
+&lt;p&gt;먼저 VS Code가 설치되어 있지 않다면 &lt;a href="https://code.visualstudio.com/"&gt;여기&lt;/a&gt;에서 설치합니다.&lt;/p&gt;
+
+&lt;p&gt;다음으로 &lt;a href="http://webdir.tistory.com/541"&gt;윈도우즈에서 리눅스 설치 - WSL&lt;/a&gt;를 참고하시어 윈도우에서 가상으로 ubuntu를 구동하는 WSL를 설치합니다 버전은 꼭 &lt;strong&gt;16.04 LTS&lt;/strong&gt;로 설치합니다. 그리고 ubuntu의  bash shell 에서 다음 과정을 수행합니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 빠른 다운로드 속도를 위해 mirror 사이트를 변경합니다.
+~$ sudo vi /etc/apt/sources.list
+# 명령어 모드에서 다음을 실행합니다.
+:%s/archive.ubuntu.com/mirror.kakao.com/
+:%s/security.ubuntu.com/mirror.kakao.com/
+:wq
+
+# 우분투 패키지 관리자를 업데이트 합니다.
+~$ sudo apt-get update
+~$ sudo apt-get upgrade
+
+# python, pip, buster를 설치합니다.
+~$ sudo apt-get install python2.7 python-pip
+~$ pip install buster
+
+# Node.js 6.X 버전과 npm을 설치합니다.
+~$ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -D
+~$ sudo apt-get install -y nodejs
+~$ sudo apt-get install npm
+
+# windows에서 C:\ubuntu 디렉터리를 생성하고 ubuntu bash shell에서 다음 명령을 수행합니다.
+~$ ln -s "/mnt/c/ubuntu" /home/{리눅스 사용자명}/ubuntu
+~$ cd ~/ubuntu
+
+# Ghost의 패키지를 다운로드하고 설치합니다.
+~$ curl -L https://github.com/TryGhost/Ghost/releases/download/0.11.12/Ghost-0.11.12.zip -o ghost.zip
+~$ sudo apt install unzip
+~$ sudo mkdir /var/www/
+~$ sudo unzip -uo ghost.zip -d /var/www/ghost
+~$ cd /var/www/ghost
+/var/www/ghost$ sudo npm install --production
+/var/www/ghost$ sudo npm start --production
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id="readyforabreak"&gt;Ready for a Break?&lt;/h3&gt;
+&lt;h2 id=""&gt;배포하기&amp;amp;실행하기&lt;/h2&gt;
 
-&lt;p&gt;Throw 3 or more dashes down on any new line and you've got yourself a fancy new divider. Aw yeah.&lt;/p&gt;
+&lt;p&gt;위의 과정을 수행하면 로컬에서 서버가 돌아갑니다. 이제 웹 브라우저에서&lt;/p&gt;
 
-&lt;hr&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;http://localhost:2368/ghost/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h3 id="advancedusage"&gt;Advanced Usage&lt;/h3&gt;
+&lt;p&gt;로 접속하여 관리자 겸 작성자 계정을 생성합니다. 여기까지 되었으면 이제 우리의 블로그를 호스팅할 레포지토리를 github에 만들어 줍니다. 저의 경우 다음과 같습니다.&lt;/p&gt;
 
-&lt;p&gt;There's one fantastic secret about Markdown. If you want, you can write plain old HTML and it'll still work! Very flexible.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;https://github.com/jaeho93/blog&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;input type="text" placeholder="I'm an input field!"&gt;&lt;/p&gt;
+&lt;p&gt;이제 서버가 실행중인 shell은 그대로 두고, 새로 ubuntu 프로그램을 실행하고 에 다음과 같은 과정을 수행합니다.  첫 줄의 명령어을 작성하면 repo URL을 입력하라고 나옵니다. 위의 repo 주소를 입력하고 [enter] 치면 성공했다고 나옵니다.&lt;/p&gt;
 
-&lt;p&gt;That should be enough to get you started. Have fun - and let us know what you think :)&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;pre&gt;&lt;code&gt;~$ cd /var/www/ghost/
+/var/www/ghost$ sudo buster setup
+Enter the Github repository URL:  
+https://github.com/jaeho93/blog  
+All set! You can generate and deploy now.  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;이제 준비가 모두 완료되었습니다. 다음의 명령어를 수행할 때마다 로컬에 있는 나의 블로그의 소스코드를 GitHub Repository에 배포하여 블로그의 정보를 업데이트합니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-`"&gt;/var/www/ghost$ buster generate
+/var/www/ghost$ buster deploy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;deploy 할 때 는 GitHub의 계정과 비밀번호를 요구합니다, 꼭 입력해주어야 실행됩니다. 성공적으로 실행 후에 github 레포지토리에 가보면 파일들이 업로드되었습니다. 이제&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;https://jaeho93.github.io/blog/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;와 같이 본인계정이름/github.io/레포지토리이름 으로 접속하면 블로그가 나옵니다.
+만약 저와 같은 trophy-ghost theme을 사용하고 싶다면 &lt;a href="https://github.com/thomasvaeth/trophy-ghost"&gt;trophy-ghost&lt;/a&gt; 에 접속하여 자료를 .zip 파일로 받은 후 ghost의 운영자 콘솔 화면에서 settings&gt;general&gt;upload theme 에 .zip 파일을 끌어다 놓으면 자동으로 적용됩니다.&lt;/p&gt;
+
+&lt;h6 id=""&gt;참고 문서&lt;/h6&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://tech.kakao.com/2016/07/07/tech-blog-story/"&gt;kakao 기술 블로그가 GitHub Pages로 간 까닭은&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.saltfactory.net/jekyll-to-ghost-story/"&gt;Jekyll 에서 Ghost 로 블로그 이전 - 1. 스토리 편&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.slant.co/versus/994/1006/~ghost_vs_jekyll"&gt;Ghost vs Jekyll detailed comparison as of 2018 - Slant&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://webdir.tistory.com/542?category=754606"&gt;윈도우즈에서 리눅스 활용팁 - WSL&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item></channel></rss>
