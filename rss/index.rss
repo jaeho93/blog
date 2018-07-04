@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>ZZERJAE's LAB</title><description>개발에 대한 본인의 이야기를 적어 놓는 공간입니다.</description><link>http://localhost:2368/</link><generator>Ghost 0.11</generator><lastBuildDate>Wed, 04 Jul 2018 18:39:44 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>github.io에 ghost 기반 블로그 배포하기-1-</title><description>&lt;h2 id=""&gt;들어가며&lt;/h2&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>ZZERJAE's LAB</title><description>개발에 대한 본인의 이야기를 적어 놓는 공간입니다.</description><link>http://localhost:2368/</link><generator>Ghost 0.11</generator><lastBuildDate>Wed, 04 Jul 2018 18:56:04 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>github.io에 ghost 기반 블로그 배포하기-1-</title><description>&lt;h2 id=""&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href="https://pages.github.com/"&gt;GitHub.io(GitHub Pages)&lt;/a&gt;는 github에서 제공해주는 무료 웹 호스팅입니다. GitHub 저장소의 내용을 웹 페이지로 서비스해주는 방식으로 동작합니다. 이를 이용하면, 어렵지 않게 자신의 블로그를 만들 수 있습니다. 블로그를 호스팅 하는데 사용하는 플랫폼으로 여러가지가 있습니다. 예를 들어, GitHub Pages에서 내부 엔진으로 사용하는 Jekyll이 있고 제가 다루고자 하는 Ghost가 있습니다. 제가&lt;/p&gt;</description><link>http://localhost:2368/githubio_blog_ghost/</link><guid isPermaLink="false">7e7d609d-0142-488f-8f71-171113e064dc</guid><category>blog</category><dc:creator>Jaeho Cho</dc:creator><pubDate>Wed, 04 Jul 2018 16:12:24 GMT</pubDate><media:content url="http://localhost:2368/content/images/2018/07/ghost.png" medium="image"/><content:encoded>&lt;h2 id=""&gt;들어가며&lt;/h2&gt;
 
@@ -28,7 +28,7 @@
 
 &lt;p&gt;다음으로 &lt;a href="http://webdir.tistory.com/541"&gt;윈도우즈에서 리눅스 설치 - WSL&lt;/a&gt;를 참고하시어 윈도우에서 가상으로 ubuntu를 구동하는 WSL를 설치합니다 버전은 꼭 &lt;strong&gt;16.04 LTS&lt;/strong&gt;로 설치합니다. 그리고 ubuntu의  bash shell 에서 다음 과정을 수행합니다.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;# 빠른 다운로드 속도를 위해 mirror 사이트를 변경합니다.
+&lt;pre&gt;&lt;code class="language-bash"&gt;# 빠른 다운로드 속도를 위해 mirror 사이트를 변경합니다.
 ~$ sudo vi /etc/apt/sources.list
 # 명령어 모드에서 다음을 실행합니다.
 :%s/archive.ubuntu.com/mirror.kakao.com/
@@ -66,19 +66,17 @@
 
 &lt;p&gt;위의 과정을 수행하면 로컬에서 서버가 돌아갑니다. 이제 웹 브라우저에서&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code&gt;http://localhost:2368/ghost/&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;http://localhost:2368/ghost/  
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;로 접속하여 관리자 겸 작성자 계정을 생성합니다. 여기까지 되었으면 이제 우리의 블로그를 호스팅할 레포지토리를 github에 만들어 줍니다. 저의 경우 다음과 같습니다.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code&gt;https://github.com/jaeho93/blog&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;https://github.com/jaeho93/blog  
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;이제 서버가 실행중인 shell은 그대로 두고, 새로 ubuntu 프로그램을 실행하고 에 다음과 같은 과정을 수행합니다.  첫 줄의 명령어을 작성하면 repo URL을 입력하라고 나옵니다. 위의 repo 주소를 입력하고 [enter] 치면 성공했다고 나옵니다.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;~$ cd /var/www/ghost/
+&lt;pre&gt;&lt;code class="language-bash"&gt;~$ cd /var/www/ghost/
 /var/www/ghost$ sudo buster setup
 Enter the Github repository URL:  
 https://github.com/jaeho93/blog  
@@ -87,15 +85,14 @@ All set! You can generate and deploy now.
 
 &lt;p&gt;이제 준비가 모두 완료되었습니다. 다음의 명령어를 수행할 때마다 로컬에 있는 나의 블로그의 소스코드를 GitHub Repository에 배포하여 블로그의 정보를 업데이트합니다.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="language-`"&gt;/var/www/ghost$ buster generate
+&lt;pre&gt;&lt;code class="language-bash"&gt;/var/www/ghost$ buster generate
 /var/www/ghost$ buster deploy
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;deploy 할 때 는 GitHub의 계정과 비밀번호를 요구합니다, 꼭 입력해주어야 실행됩니다. 성공적으로 실행 후에 github 레포지토리에 가보면 파일들이 업로드되었습니다. 이제&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code&gt;https://jaeho93.github.io/blog/&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;https://jaeho93.github.io/blog/  
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;와 같이 본인계정이름/github.io/레포지토리이름 으로 접속하면 블로그가 나옵니다.
 만약 저와 같은 trophy-ghost theme을 사용하고 싶다면 &lt;a href="https://github.com/thomasvaeth/trophy-ghost"&gt;trophy-ghost&lt;/a&gt; 에 접속하여 자료를 .zip 파일로 받은 후 ghost의 운영자 콘솔 화면에서 settings&gt;general&gt;upload theme 에 .zip 파일을 끌어다 놓으면 자동으로 적용됩니다.&lt;/p&gt;

@@ -20,7 +20,7 @@
     <meta property="og:url" content="http://localhost:2368/githubio_blog_ghost/">
     <meta property="og:image" content="http://localhost:2368/content/images/2018/07/ghost.png">
     <meta property="article:published_time" content="2018-07-04T16:12:24.000Z">
-    <meta property="article:modified_time" content="2018-07-04T18:39:28.000Z">
+    <meta property="article:modified_time" content="2018-07-04T18:55:20.000Z">
     <meta property="article:tag" content="blog">
     
     <meta property="article:publisher" content="https://www.facebook.com/ZZERJAE">
@@ -65,7 +65,7 @@
     "headline": "github.io에 ghost 기반 블로그 배포하기-1-",
     "url": "http://localhost:2368/githubio_blog_ghost/",
     "datePublished": "2018-07-04T16:12:24.000Z",
-    "dateModified": "2018-07-04T18:39:28.000Z",
+    "dateModified": "2018-07-04T18:55:20.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:2368/content/images/2018/07/ghost.png",
@@ -905,7 +905,7 @@
 
 <p>다음으로 <a href="http://webdir.tistory.com/541">윈도우즈에서 리눅스 설치 - WSL</a>를 참고하시어 윈도우에서 가상으로 ubuntu를 구동하는 WSL를 설치합니다 버전은 꼭 <strong>16.04 LTS</strong>로 설치합니다. 그리고 ubuntu의  bash shell 에서 다음 과정을 수행합니다.</p>
 
-<pre><code># 빠른 다운로드 속도를 위해 mirror 사이트를 변경합니다.
+<pre><code class="language-bash"># 빠른 다운로드 속도를 위해 mirror 사이트를 변경합니다.
 ~$ sudo vi /etc/apt/sources.list
 # 명령어 모드에서 다음을 실행합니다.
 :%s/archive.ubuntu.com/mirror.kakao.com/
@@ -943,19 +943,17 @@
 
 <p>위의 과정을 수행하면 로컬에서 서버가 돌아갑니다. 이제 웹 브라우저에서</p>
 
-<blockquote>
-  <p><code>http://localhost:2368/ghost/</code></p>
-</blockquote>
+<pre><code class="language-bash">http://localhost:2368/ghost/  
+</code></pre>
 
 <p>로 접속하여 관리자 겸 작성자 계정을 생성합니다. 여기까지 되었으면 이제 우리의 블로그를 호스팅할 레포지토리를 github에 만들어 줍니다. 저의 경우 다음과 같습니다.</p>
 
-<blockquote>
-  <p><code>https://github.com/jaeho93/blog</code></p>
-</blockquote>
+<pre><code class="language-bash">https://github.com/jaeho93/blog  
+</code></pre>
 
 <p>이제 서버가 실행중인 shell은 그대로 두고, 새로 ubuntu 프로그램을 실행하고 에 다음과 같은 과정을 수행합니다.  첫 줄의 명령어을 작성하면 repo URL을 입력하라고 나옵니다. 위의 repo 주소를 입력하고 [enter] 치면 성공했다고 나옵니다.</p>
 
-<pre><code>~$ cd /var/www/ghost/
+<pre><code class="language-bash">~$ cd /var/www/ghost/
 /var/www/ghost$ sudo buster setup
 Enter the Github repository URL:  
 https://github.com/jaeho93/blog  
@@ -964,15 +962,14 @@ All set! You can generate and deploy now.
 
 <p>이제 준비가 모두 완료되었습니다. 다음의 명령어를 수행할 때마다 로컬에 있는 나의 블로그의 소스코드를 GitHub Repository에 배포하여 블로그의 정보를 업데이트합니다.</p>
 
-<pre><code class="language-`">/var/www/ghost$ buster generate
+<pre><code class="language-bash">/var/www/ghost$ buster generate
 /var/www/ghost$ buster deploy
 </code></pre>
 
 <p>deploy 할 때 는 GitHub의 계정과 비밀번호를 요구합니다, 꼭 입력해주어야 실행됩니다. 성공적으로 실행 후에 github 레포지토리에 가보면 파일들이 업로드되었습니다. 이제</p>
 
-<blockquote>
-  <p><code>https://jaeho93.github.io/blog/</code></p>
-</blockquote>
+<pre><code class="language-bash">https://jaeho93.github.io/blog/  
+</code></pre>
 
 <p>와 같이 본인계정이름/github.io/레포지토리이름 으로 접속하면 블로그가 나옵니다.
 만약 저와 같은 trophy-ghost theme을 사용하고 싶다면 <a href="https://github.com/thomasvaeth/trophy-ghost">trophy-ghost</a> 에 접속하여 자료를 .zip 파일로 받은 후 ghost의 운영자 콘솔 화면에서 settings&gt;general&gt;upload theme 에 .zip 파일을 끌어다 놓으면 자동으로 적용됩니다.</p>
